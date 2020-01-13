@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+    <TextView
+        android:id="@+id/txtGameDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This game requires 2 players"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGameTitle" />
+
+    <TextView
+        android:id="@+id/txtMaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Made By LethDz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:background="#599ADF"
+        android:onClick="startPlaying"
+        android:text="Start"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGameTitle"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <TextView
+        android:id="@+id/txtGameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="100dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Tic-Tac-Toe"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="56sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
+</androidx.constraintlayout.widget.ConstraintLayout>
